@@ -19,6 +19,13 @@ app.get("/youtube", (req, res) => {
   res.send("<h1>Welcome to YouTube</h1>");
 });
 
+app.get("/github", (req, res) => {
+  res.json({
+    name: "Dhairya PANDYA",
+    gender: "Male",
+  });
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${process.env.PORT}`);
 });
